@@ -137,42 +137,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Category.cs">
-      <DependentUpon>MyStoreModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Customer.cs">
-      <DependentUpon>MyStoreModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MyStoreModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MyStoreModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MyStoreModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MyStoreModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MyStoreModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MyStoreModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Order.cs">
-      <DependentUpon>MyStoreModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\OrderDetail.cs">
-      <DependentUpon>MyStoreModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Product.cs">
-      <DependentUpon>MyStoreModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>MyStoreModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\User.cs">
-      <DependentUpon>MyStoreModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\ViewModel\ProductSearchVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -196,15 +160,15 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\MyStoreModel.Context.tt">
+    <Content Include="..\..\..\MyStoreModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>MyStoreModel.Context.cs</LastGenOutput>
       <DependentUpon>MyStoreModel.edmx</DependentUpon>
+      <Link>Models\MyStoreModel.Context.tt</Link>
     </Content>
-    <Content Include="Models\MyStoreModel.tt">
+    <Content Include="..\..\..\MyStoreModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MyStoreModel.edmx</DependentUpon>
-      <LastGenOutput>MyStoreModel.cs</LastGenOutput>
+      <Link>Models\MyStoreModel.tt</Link>
     </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -212,12 +176,13 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\MyStoreModel.edmx">
+    <EntityDeploy Include="..\..\..\MyStoreModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>MyStoreModel.Designer.cs</LastGenOutput>
+      <Link>Models\MyStoreModel.edmx</Link>
     </EntityDeploy>
-    <Content Include="Models\MyStoreModel.edmx.diagram">
+    <Content Include="..\..\..\MyStoreModel.edmx.diagram">
       <DependentUpon>MyStoreModel.edmx</DependentUpon>
+      <Link>Models\MyStoreModel.edmx.diagram</Link>
     </Content>
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
