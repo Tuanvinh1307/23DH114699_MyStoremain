@@ -10,6 +10,7 @@ namespace _23DH114699_MyStore1.Controllers
     {
         public ActionResult Index()
         {
+            //test
             return View();
         }
 
